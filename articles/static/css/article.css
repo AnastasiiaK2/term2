@@ -1,0 +1,43 @@
+body{
+background: #1abc9c;
+font-family: Tahoma, Arial, sans-serif;
+color: #ffffff;
+}
+.header img {
+display: block;
+width: 318px;
+margin-left: auto;
+margin-right: auto;
+}
+.archive {
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+}
+.article {
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+}
+a {
+color: #ffffff;
+}
+.article a{
+display: block;
+margin: 15 15;
+}
+.article img{
+float: left;
+
+}
+.article-author {
+width: 50%;
+float: left;
+}
+.article-created-date {
+text-align: right;
+}
+.one-post{
+margin-top: 200 ;
+
+}
