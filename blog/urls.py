@@ -16,8 +16,11 @@ Including another URLconf
 from django.urls import path, re_path
 from django.urls import path
 from articles import views
+from django.contrib import admin
 
 urlpatterns = [
     re_path(r'^article/(?P<article_id>\d+)$', views.get_article, name='get_article'),
     path('', views.archive, name='archive'),
+    path('admin/articles/article/add/', admin.site.urls),
+    path('article/new/', views.create_post, name='create_post'),
 ]

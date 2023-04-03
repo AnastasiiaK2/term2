@@ -39,5 +39,10 @@ text-align: right;
 }
 .one-post{
 margin-top: 200 ;
-
+}
+input, textarea{
+display: block;
+margin: 10px;
+width: 960px;
+float: left;
 }
