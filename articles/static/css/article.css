@@ -1,0 +1,65 @@
+body{
+background: #1abc9c;
+font-family: Tahoma, Arial, sans-serif;
+color: #ffffff;
+}
+.user{
+display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+img {
+display: block;
+width: 318px;
+margin-left: auto;
+margin-right: auto;
+}
+.archive {
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+}
+.article {
+width: 960px;
+margin-left: auto;
+margin-right: auto;
+}
+a {
+color: #ffffff;
+}
+.article a{
+display: block;
+margin: 15 15;
+}
+.article img{
+}
+.article-author {
+width: 50%;
+float: left;
+}
+.article-created-date {
+text-align: right;
+}
+.one-post{
+margin-top: 200 ;
+}
+input, textarea{
+display: block;
+margin: 10px;
+width: 960px;
+float: left;
+}
+
+.post_folded .article-author{
+display: none;
+}
+.post_folded .article-created-date{
+display: none;
+}
+.post_folded .article-text{
+display: none;
+}
+.fold-button{
+cursor:pointer;
+text-decoration:underline;
+}

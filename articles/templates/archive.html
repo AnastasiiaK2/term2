@@ -1,0 +1,41 @@
+<head>
+        <title>Архив статей</title>
+    </head>
+<body>
+
+<div class="header">
+    <link rel="stylesheet" href="{{ STATIC_URL }}/static/css/article.css">
+<div align="right">
+{% if user.is_authenticated %}
+    <p> Добро пожаловать, {{user.username}}! </p>
+    <h1> <a href="/article/new/">Создать статью</a></h1>
+    <form method="POST"> {% csrf_token %}
+        <input type="submit" style="width:50px" value="Выйти">
+    </form>
+{% else %}
+<h1> <a href="/register">Регистрация</a></h1>
+<h1> <a href="/signin">Войти</a></h1>
+{% endif %}
+</div>
+    <img src="{{ STATIC_URL }}static/img/logo.png" >
+</div>
+
+
+<div class="archive">
+{% for post in posts %}
+<div class="post">
+<h2 class="post-title"> <a href="/article/{{post.id}}">{{ post.title }}</a></h2>
+<h5 class = "fold-button"> свернуть </h5>
+<div class="article-info">
+<div class="article-author">{{ post.author.username }}</div>
+<div class="article-created-date">{{ post.created_date }}</div>
+</div>
+<p class="article-text">{{ post.get_excerpt }}</p>
+</div>
+{% endfor %}
+
+
+</div>
+<script src="{{ STATIC_URL }}/static/js/helloworld.js"></script>
+<script src="{{ STATIC_URL }}/static/js/fold-post.js"></script>
+</body>
