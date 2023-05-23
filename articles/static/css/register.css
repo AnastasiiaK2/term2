@@ -1,0 +1,15 @@
+body{
+background: #1abc9c;
+font-family: Tahoma, Arial, sans-serif;
+color: #ffffff;
+width: 600px;
+position: center;
+}
+a {
+color: #ffffff;
+}
+.user{
+display: block;
+    margin-left: auto;
+    margin-right: auto
+}

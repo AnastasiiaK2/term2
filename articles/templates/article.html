@@ -1,0 +1,25 @@
+<head>
+        <title>Статья </title>
+    </head>
+<body class="article">
+<div class="header">
+    <link rel="stylesheet" href="{{ STATIC_URL }}/static/css/article.css">
+    <img src="{{ STATIC_URL }}/static/img/logo.png">
+    <h3> <a href = "/"> Все статьи </a> </h3>
+</div>
+<div>
+
+<div class="one-post">
+<h2 class="post-title">{{ post.title }}</h2>
+<div class="article-info">
+<div class="article-author">{{ post.author.username }}</div>
+<div class="article-created- date">{{ post.created_date }}</div>
+</div>
+<p class="article-text">{{ post.text }}</p>
+</div>
+
+
+
+
+</div>
+</body>
